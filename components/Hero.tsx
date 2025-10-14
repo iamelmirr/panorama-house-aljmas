@@ -22,10 +22,13 @@ export function Hero() {
           Seoski turizam • Aljmaš
         </div>
         <div className="space-y-6">
-          <h1 className="text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
-            Odmor s pogledom na Dunav — Panorama House Aljmaš
-          </h1>
-          <p className="mx-auto max-w-2xl text-lg text-white/85 lg:mx-0">
+          <div className="space-y-3">
+            
+            <h1 className="text-4xl font-semibold leading-tight !text-white drop-shadow-2xl md:text-5xl lg:text-6xl [text-shadow:_0_4px_12px_rgb(0_0_0_/_60%)]">
+              Panorama House Aljmaš
+            </h1>
+          </div>
+          <p className="mx-auto max-w-2xl text-lg text-white/85 drop-shadow-lg lg:mx-0">
             Doživite mir, prirodu i privatnost u našem domu na brežuljku iznad Dunava.
           </p>
         </div>
@@ -33,16 +36,17 @@ export function Hero() {
           <WhatsAppCTA label="Rezerviši svoj boravak" />
           <Link
             href="/kontakt"
-            className="btn border border-white/70 bg-transparent text-white hover:bg-white/10"
+            className="btn border-2 border-white/90 bg-white/80 text-brand-charcoal backdrop-blur hover:bg-white"
           >
             Kontakt forma
           </Link>
         </div>
-        <div className="grid grid-cols-1 gap-6 text-left text-sm text-white/75 sm:grid-cols-3">
-          <div>
-            <p className="font-semibold text-white">Adresa</p>
-            <p>{SITE.address}</p>
-          </div>
+        <div className="flex items-center justify-center gap-2 text-center text-sm text-white/40 lg:justify-start lg:text-left">
+          <span>Topli dom</span>
+          <span>•</span>
+          <span>Privatni bazen</span>
+          <span>•</span>
+          <span>Jacuzzi & Sauna</span>
         </div>
       </div>
     </section>
