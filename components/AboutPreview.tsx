@@ -23,7 +23,7 @@ export function AboutPreview() {
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-forest/70">
             O smještaju
           </p>
-          <h2 className="section-heading text-brand-charcoal">
+          <h2 className="section-heading text-brand-charcoal lg:leading-snug">
             Udobnost, wellness i priroda na jednom mjestu
           </h2>
           <p className="text-base leading-relaxed text-brand-slate">
