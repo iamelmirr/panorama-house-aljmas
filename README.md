@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Panorama House Aljmaš – web prezentacija
 
-## Getting Started
+Moderni, minimalistički i mobile‑first sajt za smještaj "Panorama House Aljmaš". Izgrađen na Next.js App Routeru uz Tailwind dizajn sistem prilagođen zemljanim tonovima brenda.
 
-First, run the development server:
+![Panorama House Aljmaš](public/images/hero.jpg)
+
+### Glavne karakteristike
+
+- ✅ Mobile-first layout sa zajedničkim header/footer komponentama
+- ✅ Hero sekcija s CTA za WhatsApp rezervacije i pregled sadržaja
+- ✅ Sekcije: O smještaju, pogodnosti, galerija s lightboxom, lokacija s Google Mapom, kontakt preview
+- ✅ Posebne stranice `/o-nama` i `/kontakt` s formom (Formspree), kontakt podacima i mapom
+- ✅ SEO metapodaci (OpenGraph/Twitter), sitemap, robots, favicon
+- ✅ Fokus na pristupačnost i performanse (aria etikete, tastatura, lazy-loaded slike)
+
+### Tehnologije
+
+- [Next.js 15 (App Router)](https://nextjs.org/)
+- [React 18](https://react.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Heroicons](https://heroicons.com/) & [Lucide](https://lucide.dev/)
+
+---
+
+## 🚀 Brzi početak
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# aplikacija je dostupna na http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Produkcijski build:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Preduvjeti
 
-## Learn More
+- Node.js 18+ (preporuka 20 LTS)
+- NPM (dolazi s Node instalacijom)
 
-To learn more about Next.js, take a look at the following resources:
+### Struktura projekta
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+app/
+	layout.tsx          # Globalni layout, header/footer, metapodaci
+	page.tsx            # Početna strana
+	o-nama/page.tsx     # Detalji o objektu
+	kontakt/page.tsx    # Kontakt informacije i forma
+	globals.css         # Globalni stilovi, custom util klase
+	robots.ts, sitemap.ts, icon.png
+components/
+	Header, Footer, Hero, Features, Gallery, MapEmbed, WhatsAppCTA, ContactForm...
+lib/
+	site.config.ts      # Centralni podaci (kontakt, SEO, linkovi)
+	utils.ts            # Pomoćne funkcije
+public/
+	logo.png, images/   # Hero + galerija (9 slika)
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ✉️ Formspree integracija
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Kontakt forma koristi Formspree. Prije deplymenta:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Kreirajte besplatni projekt na [formspree.io](https://formspree.io/).
+2. Zamijenite `FORM_ENDPOINT` vrijednost u `components/ContactForm.tsx` vašim stvarnim Form ID-jem.
+3. (Opcionalno) Dodajte honeypot ili CAPTCHA po potrebama.
+
+Ako preferirate EmailJS ili vlastiti backend, promijenite `handleSubmit` logiku u istoj komponenti.
+
+---
+
+## 🌍 Deploy na Vercel
+
+1. Pushajte repo na GitHub (preporučeno ime: `panorama-house-aljmas`).
+2. U Vercel dashboardu odaberite **New Project** → importujte repo.
+3. Build komanda: `npm run build`, Output dir: `.next`
+4. Postavite custom domenu i provjerite da `/sitemap.xml` i `/robots.txt` rade.
+
+---
+
+## ✅ Kontrolna lista kvaliteta
+
+- Lighthouse mobilni ciljevi: Performance ≥ 90, Accessibility ≥ 95, SEO ≥ 95 (preporuka)
+- Provjerite navigaciju (hamburger, ESC zatvaranje, fokus stanja)
+- Testirajte WhatsApp CTA na različitim uređajima
+- Validirajte kontakt formu (obavezna polja, poruka o uspjehu/grešci)
+- Potvrdite da su sve slike optimizirane (`next/image`) i imaju opisne alt tekstove
+
+---
+
+## ℹ️ Dodatne ideje
+
+- Dodati Vercel/GA4 analytics
+- Implementirati automatski OG image generator
+- Uvesti CMS (npr. Sanity) za dinamičku galeriju i sadržaj
+- Dodati `next-sitemap` paket za naprednije upravljanje sitemapom ako se struktura širi
+
+---
+
+Sva pitanja, dorade i prijedloge možete slati na [panoramahousealjmas@gmail.com](mailto:panoramahousealjmas@gmail.com).
