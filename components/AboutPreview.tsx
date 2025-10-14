@@ -15,11 +15,11 @@ export function AboutPreview() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent" aria-hidden />
           <div className="absolute bottom-4 left-4 rounded-full bg-white/90 px-5 py-2 text-sm font-medium text-brand-charcoal shadow-sm">
-            Seoski turizam s pogledom na Dunav
+            Spavaća soba s pogledom na Dunav
           </div>
         </div>
 
-        <div className="order-1 space-y-6 lg:order-2">
+        <div className="order-1 space-y-6 text-center lg:order-2">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-forest/70">
             O smještaju
           </p>
@@ -37,7 +37,7 @@ export function AboutPreview() {
             seoskog turizma s notom luksuza. Otkrijte našu priču i pogodnosti
             koje nudimo.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 justify-center">
             <Link href="/o-nama" className="btn btn-primary">
               Saznaj više
             </Link>
