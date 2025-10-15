@@ -4,6 +4,8 @@ import "./globals.css";
 import { SITE } from "@/lib/site.config";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { MobileNavProvider } from "@/contexts/MobileNavContext";
+import { MobileNav } from "@/components/MobileNav";
 
 const headingFont = Manrope({
   variable: "--font-heading",
@@ -58,9 +60,12 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-screen flex-col bg-brand-sand text-brand-charcoal">
-  <Header />
-  <main className="flex-1">{children}</main>
-        <Footer />
+        <MobileNavProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <MobileNav />
+        </MobileNavProvider>
       </body>
     </html>
   );
