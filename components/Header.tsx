@@ -23,10 +23,11 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-black/5 bg-brand-sand/90 backdrop-blur">
-      <div className="container-grid flex h-16 items-center justify-between gap-3 sm:h-20">
+      <div className="mx-auto flex h-16 max-w-screen-xl items-center justify-between px-4 sm:h-20 sm:px-6 lg:px-8">
+        {/* Logo - Fixed left */}
         <Link
           href="/"
-          className="flex items-center gap-3"
+          className="flex items-center gap-3 flex-shrink-0"
         >
           <Image
             src="/logo.png"
@@ -41,7 +42,8 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+        {/* Centered Navigation - Desktop */}
+        <nav className="hidden absolute left-1/2 -translate-x-1/2 items-center gap-8 text-sm font-medium lg:flex">
           {NAV_LINKS.map(({ href, label }) => (
             <Link
               key={href}
@@ -51,11 +53,16 @@ export function Header() {
               {label}
             </Link>
           ))}
-          <LanguageSwitcher />
-          <WhatsAppCTA label={t.nav.whatsapp} />
         </nav>
 
-        <div className="flex items-center gap-3 md:hidden">
+        {/* Right side - Language switcher + WhatsApp */}
+        <div className="hidden items-center gap-4 lg:flex flex-shrink-0">
+          <LanguageSwitcher />
+          <WhatsAppCTA label={t.nav.whatsapp} />
+        </div>
+
+        {/* Mobile - Language switcher + Menu */}
+        <div className="flex items-center gap-3 lg:hidden">
           <LanguageSwitcher />
           <button
             type="button"
