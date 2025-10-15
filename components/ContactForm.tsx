@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 
-const FORM_ENDPOINT = "https://formspree.io/f/xxxxxxxx"; // TODO: Replace with real Formspree ID
+const FORM_ENDPOINT = "https://formspree.io/f/xjkajokk";
 
 type Status = "idle" | "loading" | "success" | "error";
 
