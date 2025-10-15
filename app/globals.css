@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-brand-gold: #d1a760;
   --color-brand-charcoal: #0f172a;

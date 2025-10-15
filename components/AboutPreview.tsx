@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -41,9 +43,29 @@ export function AboutPreview() {
             <Link href="/o-nama" className="btn btn-primary">
               Saznaj više
             </Link>
-            <Link href="#galerija" className="btn btn-ghost">
+            <button className="btn btn-ghost" onClick={() => {
+              const target = document.getElementById('galerija');
+              if (target) {
+                const targetPosition = target.offsetTop;
+                const startPosition = window.pageYOffset;
+                const distance = targetPosition - startPosition;
+                const duration = 1200; // 2 seconds for slower scroll
+                let start: number | null = null;
+                const step = (timestamp: number) => {
+                  if (!start) start = timestamp;
+                  const progress = timestamp - start;
+                  const percentage = Math.min(progress / duration, 1);
+                  const easeInOutCubic = percentage < 0.5 ? 4 * percentage * percentage * percentage : 1 - Math.pow(-2 * percentage + 2, 3) / 2;
+                  window.scrollTo(0, startPosition + distance * easeInOutCubic);
+                  if (progress < duration) {
+                    requestAnimationFrame(step);
+                  }
+                };
+                requestAnimationFrame(step);
+              }
+            }}>
               Pogledaj galeriju
-            </Link>
+            </button>
           </div>
         </div>
       </div>

@@ -13,39 +13,39 @@ type GalleryImage = {
 const images: GalleryImage[] = [
   {
     src: "/images/gallery-01.jpg",
-    alt: "Privatni bazen Panorama House Aljmaš s pogledom na rijeku",
+    alt: "Pogled sa kuće na Dunav",
   },
   {
     src: "/images/gallery-02.jpg",
-    alt: "Sunčana terasa uz bazen Panorama House Aljmaš",
+    alt: "Pogled na prirodu i okolicu",
   },
   {
     src: "/images/gallery-03.jpg",
-    alt: "Jacuzzi i ležaljke na terasi Panorama House Aljmaš",
+    alt: "Soba za spavanje s pogledom na Dunav",
   },
   {
     src: "/images/gallery-04.jpg",
-    alt: "Rustikalni detalji interijera Panorama House Aljmaš",
+    alt: "Spavaća soba",
   },
   {
     src: "/images/gallery-05.jpg",
-    alt: "Sauna s drvenim oblogama u Panorama House Aljmaš",
+    alt: "Kamin u dnevnom boravku",
   },
   {
     src: "/images/gallery-06.jpg",
-    alt: "Spavaća soba s bračnim krevetom i panoramskim prozorima",
+    alt: "Kuhinja",
   },
   {
     src: "/images/gallery-07.jpg",
-    alt: "Panoramski pogled na Dunav iz dvorišta kuće",
+    alt: "Stepenište u kući",
   },
   {
     src: "/images/gallery-08.jpg",
-    alt: "Udoban dnevni boravak Panorama House Aljmaš",
+    alt: "Udobna ljuljaška sa fenomenalnim pogledom",
   },
   {
     src: "/images/gallery-09.jpg",
-    alt: "Večernja atmosfera oko bazena Panorama House Aljmaš",
+    alt: "Roštilj na otvorenom",
   },
 ];
 
@@ -146,40 +146,42 @@ export function Gallery() {
             <figcaption className="mt-4 text-center text-sm text-white/80">
               {images[active].alt}
             </figcaption>
-            <div className="absolute right-4 top-4 flex gap-2">
-              <button
-                type="button"
-                className="rounded-full bg-black/60 p-2 text-white transition hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
-                onClick={() =>
-                  setActive((prev) =>
-                    prev === null ? prev : (prev - 1 + images.length) % images.length
-                  )
-                }
-                aria-label="Prethodna fotografija"
-              >
-                <span aria-hidden className="text-lg">‹</span>
-              </button>
-              <button
-                type="button"
-                className="rounded-full bg-black/60 p-2 text-white transition hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
-                onClick={close}
-                aria-label="Zatvori galeriju"
-              >
-                <XMarkIcon aria-hidden className="h-5 w-5" />
-              </button>
-              <button
-                type="button"
-                className="rounded-full bg-black/60 p-2 text-white transition hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
-                onClick={() =>
-                  setActive((prev) =>
-                    prev === null ? prev : (prev + 1) % images.length
-                  )
-                }
-                aria-label="Sljedeća fotografija"
-              >
-                <span aria-hidden className="text-lg">›</span>
-              </button>
-            </div>
+            
+            {/* Navigation buttons */}
+            <button
+              type="button"
+              className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black/60 p-2 text-white transition hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
+              onClick={() =>
+                setActive((prev) =>
+                  prev === null ? prev : (prev - 1 + images.length) % images.length
+                )
+              }
+              aria-label="Prethodna fotografija"
+            >
+              <span aria-hidden className="text-lg">‹</span>
+            </button>
+            
+            <button
+              type="button"
+              className="absolute top-4 right-4 rounded-full bg-black/60 p-2 text-white transition hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
+              onClick={close}
+              aria-label="Zatvori galeriju"
+            >
+              <XMarkIcon aria-hidden className="h-5 w-5" />
+            </button>
+            
+            <button
+              type="button"
+              className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black/60 p-2 text-white transition hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
+              onClick={() =>
+                setActive((prev) =>
+                  prev === null ? prev : (prev + 1) % images.length
+                )
+              }
+              aria-label="Sljedeća fotografija"
+            >
+              <span aria-hidden className="text-lg">›</span>
+            </button>
           </figure>
         )}
       </div>

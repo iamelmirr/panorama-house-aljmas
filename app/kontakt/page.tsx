@@ -36,17 +36,17 @@ const contactItems = [
 
 export default function ContactPage() {
   return (
-    <div className="space-y-16">
-      <section className="section">
+    <div className="space-y-8">
+      <section className="py-8 md:py-13">
         <div className="container-grid grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div className="space-y-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-forest/70">
+            <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-forest/70 text-center md:text-left">
               Kontaktirajte nas
             </p>
-            <h1 className="section-heading text-brand-charcoal">
+            <h1 className="section-heading text-brand-charcoal text-center md:text-left">
               Rezervacije i informacije
             </h1>
-            <p className="text-base text-brand-slate">
+            <p className="text-base text-brand-slate text-center md:text-left">
               Imate pitanje ili želite rezervisati boravak? Javite nam se putem WhatsAppa,
               telefona ili kontakt forme. Odgovaramo u najkraćem mogućem roku.
             </p>
@@ -69,7 +69,7 @@ export default function ContactPage() {
                 </a>
               ))}
             </div>
-            <div className="flex flex-wrap items-center gap-4 text-sm text-brand-slate">
+            <div className="flex flex-wrap items-center gap-4 text-sm text-brand-slate justify-center md:justify-start">
               <Link
                 href={SITE.instagram}
                 target="_blank"
@@ -89,18 +89,20 @@ export default function ContactPage() {
                 Facebook
               </Link>
             </div>
-            <WhatsAppCTA label="Rezerviši putem WhatsAppa" />
+            <div className="text-center md:text-left">
+              <WhatsAppCTA label="Rezerviši putem WhatsAppa" />
+            </div>
           </div>
 
           <ContactForm />
         </div>
       </section>
 
-      <section className="section bg-white">
+      <section className="py-8 md:py-13 bg-white">
         <div className="container-grid space-y-6">
-          <h2 className="section-heading text-brand-charcoal">Kako do nas</h2>
-          <p className="max-w-2xl text-base text-brand-slate">
-            Panorama House nalazi se na adresi {SITE.address}. Parkiranje je osigurano na lokaciji,
+          <h2 className="section-heading text-brand-charcoal text-center md:text-left">Kako do nas</h2>
+          <p className="max-w-2xl text-base text-brand-slate text-center md:text-left">
+            Panorama House nalazi se na adresi Rudina Perinac 1, Aljmaš. Parking je osiguran na lokaciji,
             a u blizini se nalaze šetnice uz Dunav, lokalni restorani i znamenitosti Aljmaša.
           </p>
           <MapEmbed />
