@@ -49,6 +49,8 @@ const images: GalleryImage[] = [
   },
 ];
 
+const duplicatedImages = [...images, ...images];
+
 export function Gallery() {
   const [active, setActive] = useState<number | null>(null);
 
@@ -85,26 +87,27 @@ export function Gallery() {
   return (
     <section id="galerija" className="section bg-brand-sand">
       <div className="container-grid space-y-10">
-        <div className="space-y-3">
+        <div className="space-y-3 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-forest/70">
             Galerija
           </p>
-          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="flex flex-col gap-4">
             <h2 className="section-heading">Zavirite u Panorama House</h2>
             <p className="text-sm text-brand-slate">
-              9 fotografija našeg doma, wellness zone i očaravajućeg pogleda na Dunav.
+              Fotografije našeg doma, wellness zone i očaravajućeg pogleda na Dunav.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
-          {images.map((image, index) => (
-            <button
-              key={image.src}
-              type="button"
-              className="group relative aspect-square overflow-hidden rounded-2xl bg-brand-charcoal/5 shadow-sm"
-              onClick={() => setActive(index)}
-            >
+        <div className="overflow-hidden">
+          <div className="flex gap-4 animate-scroll-infinite">
+            {duplicatedImages.map((image, index) => (
+              <button
+                key={`${image.src}-${index}`}
+                type="button"
+                className="group relative flex-shrink-0 w-80 aspect-square overflow-hidden rounded-2xl bg-brand-charcoal/5 shadow-sm"
+                onClick={() => setActive(index % images.length)}
+              >
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -115,6 +118,7 @@ export function Gallery() {
               <span className="sr-only">Otvori fotografiju: {image.alt}</span>
             </button>
           ))}
+        </div>
         </div>
       </div>
 
@@ -130,13 +134,13 @@ export function Gallery() {
         <div className="absolute inset-0" onClick={close} />
 
         {active !== null && (
-          <figure className="relative z-10 w-full max-w-4xl" role="dialog" aria-modal="true">
+          <figure className="relative z-10 max-w-none" role="dialog" aria-modal="true">
             <Image
               src={images[active].src}
               alt={images[active].alt}
               width={1600}
               height={1066}
-              className="h-auto w-full rounded-3xl object-cover shadow-soft"
+              className="h-auto max-h-[80vh] w-auto max-w-full rounded-3xl object-contain shadow-soft"
               priority
             />
             <figcaption className="mt-4 text-center text-sm text-white/80">

@@ -24,10 +24,7 @@ export function Footer() {
               <p className="text-sm text-brand-sand/80">{SITE.tagline}</p>
             </div>
           </div>
-          <p className="max-w-md text-sm text-brand-sand/80">
-            Panorama House Aljmaš nudi klimatiziran smještaj za 5+2 osobe,
-            privatni bazen, jacuzzi i saunu uz jedinstven pogled na Dunav.
-          </p>
+          
           <WhatsAppCTA label="Rezerviši odmah" />
         </div>
 

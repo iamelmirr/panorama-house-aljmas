@@ -24,7 +24,7 @@ const features = [
   },
   {
     title: "Klimatiziran smještaj",
-    description: "Ugodna temperatura tokom cijele godine za 5+2 gostiju.",
+    description: "Ugodna temperatura tokom cijele godine.",
     Icon: Snowflake,
   },
 ];
@@ -46,11 +46,13 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map(({ title, description, Icon }) => (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
+          {features.map(({ title, description, Icon }, index) => (
             <article
               key={title}
-              className="group rounded-2xl border border-black/5 bg-brand-sand/60 p-6 shadow-sm transition hover:-translate-y-1 hover:border-brand-gold/80 hover:shadow-soft"
+              className={`group rounded-2xl border border-black/5 bg-brand-sand/60 p-4 lg:p-6 shadow-sm transition hover:-translate-y-1 hover:border-brand-gold/80 hover:shadow-soft ${
+                index < 3 ? "lg:col-span-2" : "lg:col-span-3"
+              }`}
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/20 text-brand-forest">
                 <Icon aria-hidden className="h-6 w-6" />

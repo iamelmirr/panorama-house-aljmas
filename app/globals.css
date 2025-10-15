@@ -120,3 +120,16 @@ a:focus-visible {
   backdrop-filter: blur(12px);
   border-radius: 1rem;
 }
+
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-320px * 9 - 1rem * 9));
+  }
+}
+
+.animate-scroll-infinite {
+  animation: scroll-infinite 120s linear infinite;
+}
