@@ -4,14 +4,24 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { XMarkIcon } from "@heroicons/react/24/outline";
-import { NAV_LINKS, SITE } from "@/lib/site.config";
+import { SITE } from "@/lib/site.config";
 import { cn } from "@/lib/utils";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { useMobileNav } from "@/contexts/MobileNavContext";
+import { useLocale } from "@/lib/i18n/LocaleProvider";
 
 export function MobileNav() {
   const { isOpen, closeNav } = useMobileNav();
   const router = useRouter();
+  const { t } = useLocale();
+
+  const NAV_LINKS = [
+    { href: "/", label: t.nav.home },
+    { href: "/o-nama", label: t.nav.about },
+    { href: "/#galerija", label: t.nav.gallery },
+    { href: "/#lokacija", label: t.nav.location },
+    { href: "/kontakt", label: t.nav.contact },
+  ];
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -63,13 +73,13 @@ export function MobileNav() {
       >
         <div className="flex items-center justify-between">
           <span className="text-lg font-semibold text-brand-charcoal">
-            Navigacija
+            {t.mobileNav.title}
           </span>
           <button
             type="button"
             onClick={closeNav}
             className="rounded-full p-2 text-brand-charcoal hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
-            aria-label="Zatvori meni"
+            aria-label={t.mobileNav.close}
           >
             <XMarkIcon aria-hidden className="h-5 w-5" />
           </button>
@@ -93,13 +103,13 @@ export function MobileNav() {
           </nav>
 
           <WhatsAppCTA
-            label="Rezerviši putem WhatsAppa"
+            label={t.nav.whatsapp}
             onClick={closeNav}
           />
         </div>
 
         <div className="text-center text-sm text-brand-slate/80">
-          <p className="font-semibold text-brand-charcoal">Kontakt</p>
+          <p className="font-semibold text-brand-charcoal">{t.contact.contactInfo}</p>
           <p className="mt-2">{SITE.phone}</p>
           <p>{SITE.email}</p>
         </div>

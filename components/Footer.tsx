@@ -1,11 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { SITE } from "@/lib/site.config";
-import { WhatsAppCTA } from "@/components/WhatsAppCTA";
+import { useLocale } from "@/lib/i18n/LocaleProvider";
 
 export function Footer() {
   const year = new Date().getFullYear();
+  const { t } = useLocale();
 
   return (
     <footer className="md:mt-16 bg-brand-charcoal text-brand-sand">
@@ -20,15 +23,15 @@ export function Footer() {
               className="h-12 w-12 rounded-full object-contain"
             />
             <div>
-              <p className="text-lg font-semibold text-brand-charcoal">{SITE.name}</p>
-              <p className="text-sm text-gray-500">{SITE.tagline}</p>
+              <p className="text-lg font-semibold text-brand-sand">{SITE.name}</p>
+              <p className="text-sm text-brand-sand/70">{t.site.tagline}</p>
             </div>
           </div>
         </div>
 
         <div className="space-y-4 text-center">
           <h3 className="text-sm font-semibold uppercase tracking-wide text-white/80">
-            Kontakt
+            {t.contact.contactInfo}
           </h3>
           <ul className="space-y-3 text-sm text-brand-sand/80">
             <li className="flex items-center justify-center gap-3">
@@ -55,7 +58,7 @@ export function Footer() {
 
         <div className="space-y-4 text-center">
           <h3 className="text-sm font-semibold uppercase tracking-wide text-white/80">
-            Društvene mreže
+            {t.footer.followUs}
           </h3>
           <div className="flex flex-wrap justify-center items-center gap-4 text-sm text-brand-sand/80">
             <Link
@@ -82,7 +85,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-grid flex flex-col gap-2 py-6 text-sm text-brand-sand/70 justify-center text-center md:flex-row md:items-center">
-          <p>© {year} {SITE.name}. Sva prava pridržana.</p>
+          <p>© {year} {SITE.name}. {t.footer.rights}</p>
         </div>
       </div>
     </footer>

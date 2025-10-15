@@ -1,0 +1,150 @@
+{
+  "site": {
+    "name": "Panorama House Aljmaš",
+    "tagline": "Your escape to nature along the Danube"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "location": "Location",
+    "contact": "Contact",
+    "whatsapp": "Book via WhatsApp"
+  },
+  "hero": {
+    "label": "Rural Tourism • Aljmaš",
+    "title": "Your escape to nature along the Danube",
+    "subtitle": "Discover peace and comfort in our luxury home with pool, sauna, and breathtaking views.",
+    "cta": {
+      "primary": "Check Availability",
+      "secondary": "Book Now"
+    },
+    "highlights": {
+      "home": "Cozy Home",
+      "pool": "Private Pool",
+      "wellness": "Jacuzzi & Sauna"
+    }
+  },
+  "about": {
+    "label": "About Us",
+    "title": "A Home for Rest and Enjoyment",
+    "description": "Panorama House Aljmaš is a family-run property that combines comfort, nature, and peace. Situated on a hill above the Danube, our home offers a unique panoramic view that takes your breath away. Enjoy the private pool, jacuzzi, and sauna, and experience rural tourism with a touch of luxury.",
+    "cta": "Learn More",
+    "imageAlt": "Panorama House Aljmaš with panoramic Danube view",
+    "imageCaption": "Bedroom with Danube view",
+    "storyLabel": "Our Story",
+    "description2": "With air-conditioned accommodation for 5+2 guests, Panorama House is the ideal place for a family vacation or a getaway with friends. Spacious rooms, a barbecue, a modern kitchen, and a cozy living room create the perfect atmosphere for socializing and relaxation.",
+    "highlights": [
+      "Air-conditioned accommodation",
+      "Private pool, jacuzzi, and sauna",
+      "Panoramic view of the Danube",
+      "Barbecue and outdoor terrace",
+      "Close to cultural and natural attractions of Aljmaš"
+    ],
+    "contactCta": "Contact Information",
+    "experienceTitle": "The Experience",
+    "experienceText1": "Every stay at Panorama House is designed to be carefree. You'll be greeted by a tidy space, fresh linens, and carefully prepared details that emphasize the warmth of a home atmosphere.",
+    "experienceText2": "Our location provides quick access to the Danube, local gastronomy, and cultural landmarks of Aljmaš. Whether you're looking for an active vacation or complete peace, Panorama House offers a great balance."
+  },
+  "features": {
+    "label": "Amenities",
+    "title": "Everything you need for a perfect vacation",
+    "items": {
+      "pool": {
+        "title": "Private Pool",
+        "description": "Enjoy a refreshing swim in the private pool overlooking the Danube."
+      },
+      "sauna": {
+        "title": "Finnish Sauna",
+        "description": "Relax in the luxurious Finnish sauna after a long day by the river."
+      },
+      "view": {
+        "title": "Danube View",
+        "description": "Enjoy spectacular views of the Danube from all parts of the house."
+      },
+      "grill": {
+        "title": "BBQ Area",
+        "description": "Prepare meals outdoors in the well-equipped BBQ area."
+      },
+      "parking": {
+        "title": "On-site Parking",
+        "description": "Free parking for your vehicles directly on the premises."
+      },
+      "wifi": {
+        "title": "Fast Wi-Fi",
+        "description": "Stay connected with fast and stable internet."
+      }
+    }
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "Take a look inside Panorama House",
+    "subtitle": "Photos of our home, wellness area, and enchanting Danube views.",
+    "images": {
+      "gallery01": "View from the house to the Danube",
+      "gallery02": "View of nature and surroundings",
+      "gallery03": "Bedroom with Danube view",
+      "gallery04": "Bedroom",
+      "gallery05": "Fireplace in living room",
+      "gallery06": "Kitchen",
+      "gallery07": "Stairs",
+      "gallery08": "Swing with amazing views",
+      "gallery09": "BBQ area"
+    }
+  },
+  "location": {
+    "label": "Location",
+    "title": "Discover Aljmaš",
+    "description": "Aljmaš is a small settlement located on the right bank of the Danube, not far from Osijek. Known for its pristine nature, this area offers numerous opportunities for walks, cycling, and fishing. Nearby you'll find local restaurants with traditional cuisine, as well as landmarks that make every stay special.",
+    "cta": "View on Map"
+  },
+  "contact": {
+    "label": "Contact Us",
+    "title": "Reservations and Information",
+    "subtitle": "Have a question or want to book a stay? Contact us via WhatsApp, phone, or contact form. We respond as soon as possible.",
+    "description": "Have a question or want to book a stay? Contact us via WhatsApp, phone, or contact form. We respond as soon as possible.",
+    "howToReach": "How to Reach Us",
+    "locationDescription": "Panorama House is located at Rudina Perinac 1, Aljmaš. Parking is available on site, and nearby you'll find walking paths along the Danube, local restaurants, and Aljmaš landmarks.",
+    "whatsappCta": "Book via WhatsApp",
+    "labels": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    },
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "name.surname@email.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Example: +385 99 211 9225",
+      "arrival": "Arrival Date",
+      "departure": "Departure Date",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your desired dates, number of guests, and any additional questions.",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Thank you! We'll get back to you soon.",
+      "error": "An error occurred. Please try again later."
+    },
+    "mapTitle": "Our Location",
+    "mapDescription": "Visit us at Rudina Perinac 1, Aljmaš. Enjoy the peace of nature by the Danube.",
+    "contactInfo": "Contact Information",
+    "preview": {
+      "label": "Reservations",
+      "title": "Ready for a vacation in Aljmaš?",
+      "description": "Contact us via WhatsApp or send an inquiry through the contact form. We respond as soon as possible.",
+      "whatsappCta": "Contact us on WhatsApp",
+      "formCta": "Contact Form"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us"
+  },
+  "mobileNav": {
+    "title": "Navigation",
+    "close": "Close menu"
+  }
+}

@@ -4,54 +4,30 @@ import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { cn } from "@/lib/utils";
+import { useLocale } from "@/lib/i18n/LocaleProvider";
 
 type GalleryImage = {
   src: string;
-  alt: string;
+  altKey: keyof typeof import("@/lib/i18n/translations/hr.json").gallery.images;
 };
 
-const images: GalleryImage[] = [
-  {
-    src: "/images/gallery-01.jpg",
-    alt: "Pogled sa kuće na Dunav",
-  },
-  {
-    src: "/images/gallery-02.jpg",
-    alt: "Pogled na prirodu i okolicu",
-  },
-  {
-    src: "/images/gallery-03.jpg",
-    alt: "Soba za spavanje s pogledom na Dunav",
-  },
-  {
-    src: "/images/gallery-04.jpg",
-    alt: "Spavaća soba",
-  },
-  {
-    src: "/images/gallery-05.jpg",
-    alt: "Kamin u dnevnom boravku",
-  },
-  {
-    src: "/images/gallery-06.jpg",
-    alt: "Kuhinja",
-  },
-  {
-    src: "/images/gallery-07.jpg",
-    alt: "Stepenište u kući",
-  },
-  {
-    src: "/images/gallery-08.jpg",
-    alt: "Udobna ljuljaška sa fenomenalnim pogledom",
-  },
-  {
-    src: "/images/gallery-09.jpg",
-    alt: "Roštilj na otvorenom",
-  },
-];
-
-const duplicatedImages = [...images, ...images];
-
 export function Gallery() {
+  const { t } = useLocale();
+
+  const images: GalleryImage[] = [
+    { src: "/images/gallery-01.jpg", altKey: "gallery01" },
+    { src: "/images/gallery-02.jpg", altKey: "gallery02" },
+    { src: "/images/gallery-03.jpg", altKey: "gallery03" },
+    { src: "/images/gallery-04.jpg", altKey: "gallery04" },
+    { src: "/images/gallery-05.jpg", altKey: "gallery05" },
+    { src: "/images/gallery-06.jpg", altKey: "gallery06" },
+    { src: "/images/gallery-07.jpg", altKey: "gallery07" },
+    { src: "/images/gallery-08.jpg", altKey: "gallery08" },
+    { src: "/images/gallery-09.jpg", altKey: "gallery09" },
+  ];
+
+  const duplicatedImages = [...images, ...images];
+  
   const [active, setActive] = useState<number | null>(null);
 
   const close = useCallback(() => setActive(null), []);
@@ -89,12 +65,12 @@ export function Gallery() {
       <div className="container-grid space-y-10">
         <div className="space-y-3 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-forest/70">
-            Galerija
+            {t.gallery.label}
           </p>
           <div className="flex flex-col gap-4">
-            <h2 className="section-heading">Zavirite u Panorama House</h2>
+            <h2 className="section-heading">{t.gallery.title}</h2>
             <p className="text-sm text-brand-slate">
-              Fotografije našeg doma, wellness zone i očaravajućeg pogleda na Dunav.
+              {t.gallery.subtitle}
             </p>
           </div>
         </div>
@@ -110,12 +86,12 @@ export function Gallery() {
               >
               <Image
                 src={image.src}
-                alt={image.alt}
+                alt={t.gallery.images[image.altKey]}
                 fill
                 sizes="(min-width: 1024px) 33vw, (min-width: 768px) 33vw, 50vw"
                 className="object-cover transition duration-300 group-hover:scale-105"
               />
-              <span className="sr-only">Otvori fotografiju: {image.alt}</span>
+              <span className="sr-only">Otvori fotografiju: {t.gallery.images[image.altKey]}</span>
             </button>
           ))}
         </div>
@@ -137,14 +113,14 @@ export function Gallery() {
           <figure className="relative z-10 max-w-none" role="dialog" aria-modal="true">
             <Image
               src={images[active].src}
-              alt={images[active].alt}
+              alt={t.gallery.images[images[active].altKey]}
               width={1600}
               height={1066}
               className="h-auto max-h-[80vh] w-auto max-w-full rounded-3xl object-contain shadow-soft"
               priority
             />
             <figcaption className="mt-4 text-center text-sm text-white/80">
-              {images[active].alt}
+              {t.gallery.images[images[active].altKey]}
             </figcaption>
             
             {/* Navigation buttons */}

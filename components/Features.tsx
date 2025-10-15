@@ -1,49 +1,49 @@
-import { Binoculars, Flame, Snowflake, Sparkles, Waves } from "lucide-react";
+"use client";
 
-const features = [
-  {
-    title: "Privatni bazen",
-    description: "Osvježavajući bazen samo za vas, savršen za ljetne dane.",
-    Icon: Waves,
-  },
-  {
-    title: "Jacuzzi",
-    description: "Opustite se u toplom jacuzziju uz panoramski pogled.",
-    Icon: Sparkles,
-  },
-  {
-    title: "Sauna",
-    description: "Privatna sauna za potpuni wellness doživljaj.",
-    Icon: Flame,
-  },
-  {
-    title: "Panoramski pogled",
-    description:
-      "Smješteni na brežuljku iznad Dunava s pogledom koji oduzima dah.",
-    Icon: Binoculars,
-  },
-  {
-    title: "Klimatiziran smještaj",
-    description: "Ugodna temperatura tokom cijele godine.",
-    Icon: Snowflake,
-  },
-];
+import { Binoculars, Flame, Snowflake, Sparkles, Waves, Wifi } from "lucide-react";
+import { useLocale } from "@/lib/i18n/LocaleProvider";
 
 export function Features() {
+  const { t } = useLocale();
+
+  const features = [
+    {
+      title: t.features.items.pool.title,
+      description: t.features.items.pool.description,
+      Icon: Waves,
+    },
+    {
+      title: t.features.items.sauna.title,
+      description: t.features.items.sauna.description,
+      Icon: Flame,
+    },
+    {
+      title: t.features.items.view.title,
+      description: t.features.items.view.description,
+      Icon: Binoculars,
+    },
+    {
+      title: t.features.items.grill.title,
+      description: t.features.items.grill.description,
+      Icon: Sparkles,
+    },
+    {
+      title: t.features.items.wifi.title,
+      description: t.features.items.wifi.description,
+      Icon: Wifi,
+    },
+  ];
+
   return (
     <section className="section bg-white">
       <div className="container-grid space-y-12">
         <div className="space-y-4 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-forest/70">
-            Šta nudimo
+            {t.features.label}
           </p>
           <h2 className="section-heading text-brand-charcoal">
-            Sve što vam treba za opuštajući vikend
+            {t.features.title}
           </h2>
-          <p className="mx-auto max-w-2xl text-base text-brand-slate">
-            Panorama House Aljmaš spaja privatnost, udobnost i wellness sadržaje
-            za savršen odmor s porodicom ili prijateljima.
-          </p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-6">

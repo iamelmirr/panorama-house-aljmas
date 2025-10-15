@@ -1,3 +1,5 @@
+"use client";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
@@ -5,50 +7,46 @@ import { SITE } from "@/lib/site.config";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
-
-export const metadata: Metadata = {
-  title: `${SITE.name} – Kontakt i rezervacije`,
-  description:
-    "Kontaktirajte Panorama House Aljmaš putem WhatsAppa, telefona ili kontakt forme i rezervišite svoj odmor.",
-};
-
-const contactItems = [
-  {
-    label: "Telefon",
-    value: SITE.phone,
-    href: `tel:${SITE.phone.replace(/\s+/g, "")}`,
-    Icon: Phone,
-  },
-  {
-    label: "Email",
-    value: SITE.email,
-    href: `mailto:${SITE.email}`,
-    Icon: Mail,
-  },
-  {
-    label: "Adresa",
-    value: SITE.address,
-    href: "https://maps.google.com/?q=Rudina%20Perinac%201,%20Aljma%C5%A1,%20Hrvatska",
-    Icon: MapPin,
-    external: true,
-  },
-];
+import { useLocale } from "@/lib/i18n/LocaleProvider";
 
 export default function ContactPage() {
+  const { t } = useLocale();
+
+  const contactItems = [
+    {
+      label: t.contact.labels.phone,
+      value: SITE.phone,
+      href: `tel:${SITE.phone.replace(/\s+/g, "")}`,
+      Icon: Phone,
+    },
+    {
+      label: t.contact.labels.email,
+      value: SITE.email,
+      href: `mailto:${SITE.email}`,
+      Icon: Mail,
+    },
+    {
+      label: t.contact.labels.address,
+      value: SITE.address,
+      href: "https://maps.google.com/?q=Rudina%20Perinac%201,%20Aljma%C5%A1,%20Hrvatska",
+      Icon: MapPin,
+      external: true,
+    },
+  ];
+
   return (
     <div className="space-y-8">
       <section className="py-8 md:py-13">
         <div className="container-grid grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div className="space-y-6">
             <p className="text-sm font-semibold uppercase tracking-[0.35em] text-brand-forest/70 text-center md:text-left">
-              Kontaktirajte nas
+              {t.contact.label}
             </p>
             <h1 className="section-heading text-brand-charcoal text-center md:text-left">
-              Rezervacije i informacije
+              {t.contact.title}
             </h1>
             <p className="text-base text-brand-slate text-center md:text-left">
-              Imate pitanje ili želite rezervisati boravak? Javite nam se putem WhatsAppa,
-              telefona ili kontakt forme. Odgovaramo u najkraćem mogućem roku.
+              {t.contact.description}
             </p>
             <div className="space-y-4">
               {contactItems.map(({ label, value, href, Icon, external }) => (
@@ -90,7 +88,7 @@ export default function ContactPage() {
               </Link>
             </div>
             <div className="text-center md:text-left">
-              <WhatsAppCTA label="Rezerviši putem WhatsAppa" />
+              <WhatsAppCTA label={t.contact.whatsappCta} />
             </div>
           </div>
 
@@ -100,10 +98,9 @@ export default function ContactPage() {
 
       <section className="py-8 md:py-13 bg-white">
         <div className="container-grid space-y-6">
-          <h2 className="section-heading text-brand-charcoal text-center md:text-left">Kako do nas</h2>
+          <h2 className="section-heading text-brand-charcoal text-center md:text-left">{t.contact.howToReach}</h2>
           <p className="max-w-2xl text-base text-brand-slate text-center md:text-left">
-            Panorama House nalazi se na adresi Rudina Perinac 1, Aljmaš. Parking je osiguran na lokaciji,
-            a u blizini se nalaze šetnice uz Dunav, lokalni restorani i znamenitosti Aljmaša.
+            {t.contact.locationDescription}
           </p>
           <MapEmbed />
         </div>

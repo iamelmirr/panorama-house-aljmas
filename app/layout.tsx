@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileNavProvider } from "@/contexts/MobileNavContext";
 import { MobileNav } from "@/components/MobileNav";
+import { LocaleProvider } from "@/lib/i18n/LocaleProvider";
 
 const headingFont = Manrope({
   variable: "--font-heading",
@@ -60,12 +61,14 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-screen flex-col bg-brand-sand text-brand-charcoal">
-        <MobileNavProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-          <MobileNav />
-        </MobileNavProvider>
+        <LocaleProvider>
+          <MobileNavProvider>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <MobileNav />
+          </MobileNavProvider>
+        </LocaleProvider>
       </body>
     </html>
   );

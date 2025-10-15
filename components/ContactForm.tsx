@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useLocale } from "@/lib/i18n/LocaleProvider";
 
 const FORM_ENDPOINT = "https://formspree.io/f/xjkajokk";
 
@@ -9,6 +10,7 @@ type Status = "idle" | "loading" | "success" | "error";
 export function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const { t } = useLocale();
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -36,12 +38,12 @@ export function ContactForm() {
       const data = await response.json().catch(() => null);
       setStatus("error");
       setErrorMessage(
-        data?.error || "Došlo je do greške. Pokušajte ponovo kasnije."
+        data?.error || t.contact.form.error
       );
     } catch (error) {
       console.error("Form submit error", error);
       setStatus("error");
-      setErrorMessage("Neuspješno slanje poruke. Provjerite vezu i pokušajte ponovo.");
+      setErrorMessage(t.contact.form.error);
     }
   }
 
@@ -52,40 +54,40 @@ export function ContactForm() {
     >
       <div className="grid gap-2">
         <label htmlFor="name" className="text-sm font-medium text-brand-charcoal">
-          Ime i prezime*
+          {t.contact.form.name}*
         </label>
         <input
           id="name"
           name="name"
           required
-          placeholder="Vaše ime"
+          placeholder={t.contact.form.namePlaceholder}
           className="rounded-lg border border-black/10 px-4 py-2.5 text-sm text-brand-charcoal shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
         />
       </div>
 
       <div className="grid gap-2">
         <label htmlFor="email" className="text-sm font-medium text-brand-charcoal">
-          Email*
+          {t.contact.form.email}*
         </label>
         <input
           id="email"
           name="email"
           type="email"
           required
-          placeholder="ime.prezime@email.com"
+          placeholder={t.contact.form.emailPlaceholder}
           className="rounded-lg border border-black/10 px-4 py-2.5 text-sm text-brand-charcoal shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
         />
       </div>
 
       <div className="grid gap-2">
         <label htmlFor="phone" className="text-sm font-medium text-brand-charcoal">
-          Broj telefona*
+          {t.contact.form.phone}*
         </label>
         <input
           id="phone"
           name="phone"
           required
-          placeholder="Primjer: +385 99 211 9225"
+          placeholder={t.contact.form.phonePlaceholder}
           className="rounded-lg border border-black/10 px-4 py-2.5 text-sm text-brand-charcoal shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
         />
       </div>
@@ -93,7 +95,7 @@ export function ContactForm() {
       <div className="grid gap-2 sm:grid-cols-2 sm:gap-4">
         <div className="grid gap-2">
           <label htmlFor="arrival" className="text-sm font-medium text-brand-charcoal">
-            Datum dolaska
+            {t.contact.form.arrival}
           </label>
           <input
             id="arrival"
@@ -104,7 +106,7 @@ export function ContactForm() {
         </div>
         <div className="grid gap-2">
           <label htmlFor="departure" className="text-sm font-medium text-brand-charcoal">
-            Datum odlaska
+            {t.contact.form.departure}
           </label>
           <input
             id="departure"
@@ -117,14 +119,14 @@ export function ContactForm() {
 
       <div className="grid gap-2">
         <label htmlFor="message" className="text-sm font-medium text-brand-charcoal">
-          Poruka*
+          {t.contact.form.message}*
         </label>
         <textarea
           id="message"
           name="message"
           required
           rows={4}
-          placeholder="Napišite nam detalje o željenom terminu, broju gostiju i dodatnim pitanjima."
+          placeholder={t.contact.form.messagePlaceholder}
           className="rounded-lg border border-black/10 px-4 py-2.5 text-sm text-brand-charcoal shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
         />
       </div>
@@ -134,12 +136,12 @@ export function ContactForm() {
         className="btn btn-primary justify-center"
         disabled={status === "loading"}
       >
-        {status === "loading" ? "Slanje..." : "Pošalji poruku"}
+        {status === "loading" ? t.contact.form.submitting : t.contact.form.submit}
       </button>
 
       {status === "success" && (
         <p className="rounded-lg bg-brand-forest/10 p-4 text-sm text-brand-forest">
-          Hvala! Uskoro ćemo vam se javiti.
+          {t.contact.form.success}
         </p>
       )}
 
