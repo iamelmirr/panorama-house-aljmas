@@ -57,8 +57,8 @@ export function Header() {
 
         {/* Right side - Language switcher + WhatsApp */}
         <div className="hidden items-center gap-4 lg:flex flex-shrink-0">
-          <LanguageSwitcher />
           <WhatsAppCTA label={t.nav.whatsapp} />
+          <LanguageSwitcher />
         </div>
 
         {/* Mobile - Language switcher + Menu */}
