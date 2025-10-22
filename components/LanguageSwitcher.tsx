@@ -68,9 +68,13 @@ export function LanguageSwitcher() {
           <div
             role="dialog"
             aria-modal="true"
-            className="absolute right-0 z-50 mt-3 w-48 overflow-hidden rounded-2xl border border-black/5 bg-white shadow-xl"
+            className="absolute right-0 z-50 mt-2 w-48 animate-in fade-in slide-in-from-top-2 duration-200"
           >
-            <div className="border-t border-black/5">
+            {/* Arrow pointing to trigger */}
+            <div className="absolute -top-2 right-3 h-4 w-4 rotate-45 border-l border-t border-black/5 bg-white" />
+            
+            {/* Modal content */}
+            <div className="relative overflow-hidden rounded-2xl border border-black/5 bg-white shadow-xl">
               {locales.map((code) => {
                 const { flag, label } = localeMetadata[code];
                 const isActive = locale === code;
@@ -79,14 +83,14 @@ export function LanguageSwitcher() {
                     key={code}
                     type="button"
                     onClick={() => handleSelect(code)}
-                    className={`flex w-full items-center gap-3 px-4 py-3 text-left text-sm transition ${
+                    className={`group flex w-full items-center gap-3 px-4 py-3 text-left text-sm transition-all duration-200 ${
                       isActive
                         ? "bg-black/5 text-brand-charcoal"
-                        : "hover:bg-brand-sand/40 text-brand-slate"
+                        : "text-brand-slate hover:bg-brand-sand/60 hover:pl-5"
                     }`}
                     aria-current={isActive ? "true" : undefined}
                   >
-                    <span className="text-lg" aria-hidden>{flag}</span>
+                    <span className="text-lg transition-transform duration-200 group-hover:scale-110" aria-hidden>{flag}</span>
                     <span className="font-medium">{label}</span>
                   </button>
                 );
