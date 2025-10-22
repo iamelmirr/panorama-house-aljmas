@@ -24,8 +24,7 @@ export const SITE: SiteConfig = {
   email: "panoramahousealjmas@gmail.com",
   instagram: "https://instagram.com/panorama_house_aljmas",
   facebook: "https://www.facebook.com/profile.php?id=61566358143307",
-  whatsappLink:
-    "https://wa.me/385992119225?text=Pozdrav,%20želio%20bih%20rezervisati%20boravak%20u%20Panorama%20Houseu.",
+  whatsappLink: "https://wa.me/385992119225",
   meta: {
     title: "Panorama House Aljmaš – Seoski turizam s pogledom na Dunav",
     description: "Smještaj s bazenom, jacuzzijem i saunom u srcu Aljmaša.",
