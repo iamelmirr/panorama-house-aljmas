@@ -1,0 +1,13 @@
+# Hostinger deployment configuration
+runtime: nodejs
+node_version: 18
+
+build:
+  command: npm install && npm run build
+
+run:
+  command: npm start
+  port: 3000
+
+environment:
+  NODE_ENV: production
