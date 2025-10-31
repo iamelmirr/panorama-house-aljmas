@@ -3,6 +3,8 @@ import { SITE } from "@/lib/site.config";
 
 const BASE_URL = SITE.meta.url ?? "https://panorama-house-aljmas.com";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
