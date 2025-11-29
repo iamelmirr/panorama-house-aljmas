@@ -14,7 +14,7 @@
   "hero": {
     "label": "Ferienhaus • Aljmaš",
     "title": "Ihr Ort der Ruhe und Erholung mit Donaublick",
-    "subtitle": "Genießen Sie den privaten Pool, den Whirlpool und die Sauna, umgeben von Ruhe und atemberaubendem Panoramablick",
+    "subtitle": "Als stolzer Träger des Local Host-Abzeichens bietet das Panorama House ein authentisches Aljmaš-Erlebnis – eine Mischung aus Komfort, Natur und herzlicher Gastfreundschaft. Genießen Sie den privaten Pool, den Whirlpool und die Sauna, umgeben von Ruhe und atemberaubendem Panoramablick.",
     "cta": {
       "primary": "Verfügbarkeit prüfen",
       "secondary": "Jetzt buchen"
@@ -27,8 +27,8 @@
   },
   "about": {
     "label": "Über uns",
-    "title": "Ein Zuhause zum Entspannen und Genießen",
-    "description": "Panorama House Aljmaš ist ein familiengeführtes Haus, das Komfort, Natur und Ruhe vereint. Auf einem Hügel über der Donau gelegen, bietet unser Zuhause einen einzigartigen Panoramablick, der den Atem raubt. Genießen Sie den privaten Pool, den Whirlpool und die Sauna und erleben Sie Landtourismus mit einem Hauch von Luxus.",
+    "title": "Wo Komfort auf Natur trifft",
+    "description": "Das Panorama House Aljmaš bietet den perfekten Rückzugsort für Entspannung und Flucht aus dem Alltag. Auf einem Hügel über der Donau gelegen, bietet dieses Ferienhaus einen wunderschönen Panoramablick und eine friedliche Atmosphäre, die Sie sofort in ihren Bann ziehen wird.",
     "cta": "Mehr erfahren",
     "imageAlt": "Panorama House Aljmaš mit Panoramablick auf die Donau",
     "imageCaption": "Schlafzimmer mit Donaublick",
@@ -53,6 +53,10 @@
       "pool": {
         "title": "Privater Pool",
         "description": "Erfrischen und entspannen Sie sich im privaten Pool mit herrlichem Blick auf die Donau."
+      },
+      "jacuzzi": {
+        "title": "Whirlpool",
+        "description": "Gönnen Sie sich Entspannung im Whirlpool und genießen Sie das thermische Massageerlebnis."
       },
       "sauna": {
         "title": "Finnische Sauna",

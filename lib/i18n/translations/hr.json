@@ -14,7 +14,7 @@
   "hero": {
     "label": "Kuća za odmor • Aljmaš",
     "title": "Vaše mjesto mira i odmora s pogledom na Dunav",
-    "subtitle": "Uživajte u privatnom bazenu, jacuzziju i sauni, okruženi mirom i panoramskim pogledom koji oduzima dah",
+    "subtitle": "Kao ponosni nositelj oznake Local Host, Panorama House nudi autentičan doživljaj Aljmaša – spoj udobnosti, prirode i domaće gostoljubivosti. Uživajte u privatnom bazenu, jacuzziju i sauni, okruženi mirom i panoramskim pogledom koji oduzima dah.",
     "cta": {
       "primary": "Pogledaj dostupnost",
       "secondary": "Rezerviraj sada"
@@ -27,8 +27,8 @@
   },
   "about": {
     "label": "O nama",
-    "title": "Dom za odmor i uživanje",
-    "description": "Panorama House Aljmaš je obiteljski objekt koji spaja udobnost, prirodu i mir. Smješten na brežuljku iznad Dunava, naš dom nudi jedinstveni panoramski pogled koji oduzima dah. Uživajte u privatnom bazenu, jacuzziju i sauni te doživite seoski turizam s daškom luksuza.",
+    "title": "Mjesto gdje se udobnost susreće s prirodom",
+    "description": "Panorama House Aljmaš pruža savršeno utočište za opuštanje i bijeg od svakodnevice. Smještena na brežuljku iznad Dunava, ova kuća za odmor nudi prekrasan panoramski pogled i mirnu atmosferu koja će vas odmah osvojiti.",
     "cta": "Saznaj više",
     "imageAlt": "Panorama House Aljmaš s panoramskim pogledom na Dunav",
     "imageCaption": "Spavaća soba s pogledom na Dunav",
@@ -53,6 +53,10 @@
       "pool": {
         "title": "Privatni bazen",
         "description": "Osvježite se i opustite u privatnom bazenu s prekrasnim pogledom na Dunav."
+      },
+      "jacuzzi": {
+        "title": "Jacuzzi",
+        "description": "Prepustite se relaksaciji u jacuzziju i uživajte u toplinskom masažnom iskustvu."
       },
       "sauna": {
         "title": "Finska sauna",

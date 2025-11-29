@@ -1,6 +1,6 @@
 "use client";
 
-import { Binoculars, Flame, Snowflake, Sparkles, Waves, Wifi } from "lucide-react";
+import { Binoculars, Droplets, Flame, Sparkles, Waves, Wifi } from "lucide-react";
 import { useLocale } from "@/lib/i18n/LocaleProvider";
 
 export function Features() {
@@ -11,6 +11,11 @@ export function Features() {
       title: t.features.items.pool.title,
       description: t.features.items.pool.description,
       Icon: Waves,
+    },
+    {
+      title: t.features.items.jacuzzi.title,
+      description: t.features.items.jacuzzi.description,
+      Icon: Droplets,
     },
     {
       title: t.features.items.sauna.title,
@@ -46,13 +51,11 @@ export function Features() {
           </h2>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
-          {features.map(({ title, description, Icon }, index) => (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {features.map(({ title, description, Icon }) => (
             <article
               key={title}
-              className={`group rounded-2xl border border-black/5 bg-brand-sand/60 p-4 lg:p-6 shadow-sm transition hover:-translate-y-1 hover:border-brand-gold/80 hover:shadow-soft ${
-                index < 3 ? "lg:col-span-2" : "lg:col-span-3"
-              }`}
+              className="group rounded-2xl border border-black/5 bg-brand-sand/60 p-4 lg:p-6 shadow-sm transition hover:-translate-y-1 hover:border-brand-gold/80 hover:shadow-soft"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold/20 text-brand-forest">
                 <Icon aria-hidden className="h-6 w-6" />

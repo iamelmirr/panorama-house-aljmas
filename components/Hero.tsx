@@ -26,11 +26,19 @@ export function Hero() {
           {t.hero.label}
         </div>
         <div className="space-y-6">
-          <div className="space-y-3">
-            
+          <div className="space-y-4">
             <h1 className="text-4xl font-semibold leading-tight !text-white drop-shadow-2xl md:text-5xl lg:text-6xl [text-shadow:_0_4px_12px_rgb(0_0_0_/_60%)]">
               {t.site.name}
             </h1>
+            <div className="flex justify-center">
+              <Image
+                src="/local host logo.png"
+                alt="Local Host badge"
+                width={120}
+                height={120}
+                className="drop-shadow-lg"
+              />
+            </div>
           </div>
           <p className="mx-auto max-w-2xl text-lg text-white/85 drop-shadow-lg">
             {t.hero.subtitle}

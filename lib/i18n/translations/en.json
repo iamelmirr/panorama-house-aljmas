@@ -14,7 +14,7 @@
   "hero": {
     "label": "Holiday Home • Aljmaš",
     "title": "Your place of peace and relaxation with a Danube view",
-    "subtitle": "Enjoy the private pool, jacuzzi, and sauna, surrounded by tranquility and breathtaking panoramic views",
+    "subtitle": "As proud bearers of the Local Host badge, Panorama House offers an authentic Aljmaš experience – a blend of comfort, nature, and warm hospitality. Enjoy the private pool, jacuzzi, and sauna, surrounded by tranquility and breathtaking panoramic views.",
     "cta": {
       "primary": "Check Availability",
       "secondary": "Book Now"
@@ -27,8 +27,8 @@
   },
   "about": {
     "label": "About Us",
-    "title": "A Home for Rest and Enjoyment",
-    "description": "Panorama House Aljmaš is a family-run property that combines comfort, nature, and peace. Situated on a hill above the Danube, our home offers a unique panoramic view that takes your breath away. Enjoy the private pool, jacuzzi, and sauna, and experience rural tourism with a touch of luxury.",
+    "title": "Where Comfort Meets Nature",
+    "description": "Panorama House Aljmaš provides the perfect retreat for relaxation and escape from everyday life. Situated on a hill above the Danube, this holiday home offers a beautiful panoramic view and peaceful atmosphere that will immediately captivate you.",
     "cta": "Learn More",
     "imageAlt": "Panorama House Aljmaš with panoramic Danube view",
     "imageCaption": "Bedroom with Danube view",
@@ -53,6 +53,10 @@
       "pool": {
         "title": "Private Pool",
         "description": "Refresh and relax in the private pool with beautiful views of the Danube."
+      },
+      "jacuzzi": {
+        "title": "Jacuzzi",
+        "description": "Indulge in relaxation in the jacuzzi and enjoy the thermal massage experience."
       },
       "sauna": {
         "title": "Finnish Sauna",
