@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Panorama House Aljmaš",
-    "tagline": "Seoski turizam s pogledom na Dunav"
+    "tagline": "Kuća za odmor s pogledom na Dunav"
   },
   "nav": {
     "home": "Početna",
@@ -12,15 +12,15 @@
     "whatsapp": "Rezerviraj putem WhatsAppa"
   },
   "hero": {
-    "label": "Seoski turizam • Aljmaš",
-    "title": "Vaš bijeg u prirodu uz obalu Dunava",
-    "subtitle": "Otkrijte mir i udobnost našeg luksuznog doma sa bazenom, saunom i pogledom koji oduzima dah.",
+    "label": "Kuća za odmor • Aljmaš",
+    "title": "Vaše mjesto mira i odmora s pogledom na Dunav",
+    "subtitle": "Uživajte u privatnom bazenu, jacuzziju i sauni, okruženi mirom i panoramskim pogledom koji oduzima dah",
     "cta": {
       "primary": "Pogledaj dostupnost",
       "secondary": "Rezerviraj sada"
     },
     "highlights": {
-      "home": "Topli dom",
+      "home": "Mirno okruženje",
       "pool": "Privatni bazen",
       "wellness": "Jacuzzi & Sauna"
     }
@@ -33,18 +33,18 @@
     "imageAlt": "Panorama House Aljmaš s panoramskim pogledom na Dunav",
     "imageCaption": "Spavaća soba s pogledom na Dunav",
     "storyLabel": "Naša priča",
-    "description2": "Uz klimatizirani smještaj za 5+2 gostiju, Panorama House je idealno mjesto za porodični odmor ili bijeg s prijateljima. Prostrane sobe, roštilj, moderno opremljena kuhinja i cozy dnevni boravak stvaraju savršenu atmosferu za druženje i opuštanje.",
+    "description2": "Uživajte u privatnom bazenu, jacuzziju i sauni, okruženi zelenilom i tišinom. Prostrane i svijetle sobe, moderno opremljena kuhinja te ugodan dnevni boravak stvaraju osjećaj doma i udobnosti.\n\nS kapacitetom za 5+2 gostiju, Panorama House idealna je za obiteljski odmor, vikend s prijateljima ili romantičan bijeg u prirodu. Na vanjskoj terasi s roštiljem možete provesti nezaboravne trenutke uz zalazak sunca i pogled koji oduzima dah.",
     "highlights": [
-      "Klimatiziran smještaj",
+      "Klimatiziran smještaj (4*)",
       "Privatni bazen, jacuzzi i sauna",
       "Panoramski pogled na Dunav",
-      "Roštilj i vanjska terasa",
-      "Blizina kulturnih i prirodnih atrakcija Aljmaša"
+      "Roštilj i prostrana natkrivena terasa",
+      "Blizina kulturnih i prirodnih atrakcija Aljmaša i okolice"
     ],
     "contactCta": "Kontakt informacije",
     "experienceTitle": "Iskustvo boravka",
-    "experienceText1": "Svaki boravak u Panorama Houseu osmišljen je kako bi bio bezbrižan. Dočekat će vas uredan prostor, svježa posteljina i pažljivo pripremljeni detalji koji naglašavaju toplinu domaće atmosfere.",
-    "experienceText2": "Naša lokacija omogućava brz pristup Dunavu, lokalnoj gastronomiji i kulturnim znamenitostima Aljmaša. Bilo da tražite aktivan odmor ili potpuni mir, Panorama House pruža sjajnu ravnotežu."
+    "experienceText1": "U Panorama Houseu vjerujemo da pravi luksuz leži u miru, udobnosti i toploj dobrodošlici. Svaki je kutak pažljivo uređen kako biste se od prvog trenutka osjećali opušteno i posebno.",
+    "experienceText2": "Prepustite se jacuzziju ili sauni, rashladite u bazenu i uživajte u pogledu na Dunav koji oduzima dah. Kada poželite istražiti okolicu, bicikli su vam na raspolaganju za lagane vožnje kroz prirodu, a u blizini vas čekaju ljepote Aljmaša, lokalne vinarije i kulturne znamenitosti.\n\nPanorama House – mjesto gdje se elegancija susreće s toplinom doma i gdje svaki boravak postaje uspomena."
   },
   "features": {
     "label": "Sadržaji",
@@ -52,34 +52,30 @@
     "items": {
       "pool": {
         "title": "Privatni bazen",
-        "description": "Uživajte u osvježavajućem kupanju u privatnom bazenu sa pogledom na Dunav."
+        "description": "Osvježite se i opustite u privatnom bazenu s prekrasnim pogledom na Dunav."
       },
       "sauna": {
         "title": "Finska sauna",
-        "description": "Relaksirajte u luksuznoj finskoj sauni nakon dugog dana uz rijeku."
+        "description": "Doživite potpuni mir i relaksaciju u luksuznoj finskoj sauni nakon dana provedenog u prirodi."
       },
       "view": {
         "title": "Pogled na Dunav",
-        "description": "Uživajte u spektakularnom pogledu na Dunav iz svih dijelova kuće."
+        "description": "Uživajte u spektakularnom panoramskom pogledu na Dunav iz svih dijelova kuće."
       },
       "grill": {
         "title": "Prostor za roštilj",
-        "description": "Pripremite obrok na otvorenom u uređenom prostoru za roštilj."
-      },
-      "parking": {
-        "title": "Parking na lokaciji",
-        "description": "Besplatno parkiranje za vaša vozila direktno na lokaciji."
+        "description": "Pripremite ukusne obroke na otvorenom u uređenom i praktičnom prostoru za roštilj."
       },
       "wifi": {
         "title": "Brzi Wi-Fi",
-        "description": "Ostanite povezani sa brzim i stabilnim internet-om."
+        "description": "Ostanite povezani putem brzog i stabilnog interneta, bez ometanja vašeg odmora."
       }
     }
   },
   "gallery": {
     "label": "Galerija",
     "title": "Zavirite u Panorama House",
-    "subtitle": "Fotografije našeg doma, wellness zone i očaravajućeg pogleda na Dunav.",
+    "subtitle": "Moderno uređen dom, privatni bazen i panoramski pogled koji zovu na opuštanje i trenutke koje ćete pamtiti.",
     "images": {
       "gallery01": "Pogled sa kuće na Dunav",
       "gallery02": "Pogled na prirodu i okolicu",
@@ -94,17 +90,17 @@
   },
   "location": {
     "label": "Lokacija",
-    "title": "Otkrijte Aljmaš",
-    "description": "Aljmaš je malo naselje smješteno uz desnu obalu Dunava, nedaleko od Osijeka. Poznat po netaknutoj prirodi, ovo područje nudi brojne mogućnosti za šetnje, vožnju biciklom i ribolov. U blizini se nalaze lokalni restorani sa tradicionalnom kuhinjom, kao i znamenitosti koje čine svaki boravak posebnim.",
+    "title": "Aljmaš i okolina",
+    "description": "Ušuškano na krajnjem istoku Hrvatske, Aljmaš je mirno naselje uz desnu obalu Dunava, nedaleko od Osijeka. Okolica oduševljava netaknutom prirodom, idealnom za šetnje, vožnju biciklom i ribolov. U blizini ćete pronaći lokalne restorane s tradicionalnom slavonskom kuhinjom, te kulturne i sakralne znamenitosti koje svaki boravak čine posebnim. Općina Erdut, kojoj pripada Aljmaš, nudi i vinske ceste, prirodne rezervate i šarolik spektar manifestacija. Posjetite Aljmaš i vratite se u udobnost Panorama House — svoj dom daleko od doma.",
     "cta": "Vidi na mapi"
   },
   "contact": {
     "label": "Kontaktirajte nas",
     "title": "Rezervacije i informacije",
-    "subtitle": "Imate pitanje ili želite rezervirati boravak? Javite nam se putem WhatsAppa, telefona ili kontakt forme. Odgovaramo u najkraćem mogućem roku.",
-    "description": "Imate pitanje ili želite rezervirati boravak? Javite nam se putem WhatsAppa, telefona ili kontakt forme. Odgovaramo u najkraćem mogućem roku.",
+    "subtitle": "Želite rezervirati boravak ili saznati više? Javite nam se putem WhatsAppa, telefona ili kontakt forme – veselimo se vašem upitu i što ćemo vam pomoći da uživate u miru, udobnosti i panoramskom pogledu Panorama Housea!",
+    "description": "Želite rezervirati boravak ili saznati više? Javite nam se putem WhatsAppa, telefona ili kontakt forme – veselimo se vašem upitu i što ćemo vam pomoći da uživate u miru, udobnosti i panoramskom pogledu Panorama Housea!",
     "howToReach": "Kako do nas",
-    "locationDescription": "Panorama House nalazi se na adresi Rudina Perinac 1, Aljmaš. Parking je osiguran na lokaciji, a u blizini se nalaze šetnice uz Dunav, lokalni restorani i znamenitosti Aljmaša.",
+    "locationDescription": "Panorama House nalazi se na adresi Rudina Perinac 1, Aljmaš. Do lokacije je jednostavno doći automobilom, a besplatan parking za više vozila osiguran je na samoj lokaciji. Radujemo se vašem dolasku i što ćete uživati u miru, udobnosti i prekrasnom pogledu.",
     "whatsappCta": "Rezervirajte putem WhatsAppa",
     "labels": {
       "phone": "Telefon",
@@ -132,8 +128,8 @@
     "contactInfo": "Kontakt informacije",
     "preview": {
       "label": "Rezervacije",
-      "title": "Spremni za odmor u Aljmašu?",
-      "description": "Javite nam se putem WhatsAppa ili pošaljite upit preko kontakt forme. Odgovaramo u najkraćem roku.",
+      "title": "Uživajte u privatnom bazenu, jacuzziju i sauni s pogledom na Dunav!",
+      "description": "Rezervirajte svoj boravak putem WhatsAppa ili kontakt forme i prepustite se nezaboravnom odmoru.",
       "whatsappCta": "Kontaktiraj nas na WhatsApp",
       "formCta": "Kontakt forma"
     }

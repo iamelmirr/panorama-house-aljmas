@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Panorama House Aljmaš",
-    "tagline": "Your escape to nature along the Danube"
+    "tagline": "Holiday Home with Danube View"
   },
   "nav": {
     "home": "Home",
@@ -12,15 +12,15 @@
     "whatsapp": "Book via WhatsApp"
   },
   "hero": {
-    "label": "Rural Tourism • Aljmaš",
-    "title": "Your escape to nature along the Danube",
-    "subtitle": "Discover peace and comfort in our luxury home with pool, sauna, and breathtaking views.",
+    "label": "Holiday Home • Aljmaš",
+    "title": "Your place of peace and relaxation with a Danube view",
+    "subtitle": "Enjoy the private pool, jacuzzi, and sauna, surrounded by tranquility and breathtaking panoramic views",
     "cta": {
       "primary": "Check Availability",
       "secondary": "Book Now"
     },
     "highlights": {
-      "home": "Cozy Home",
+      "home": "Peaceful Surroundings",
       "pool": "Private Pool",
       "wellness": "Jacuzzi & Sauna"
     }
@@ -33,18 +33,18 @@
     "imageAlt": "Panorama House Aljmaš with panoramic Danube view",
     "imageCaption": "Bedroom with Danube view",
     "storyLabel": "Our Story",
-    "description2": "With air-conditioned accommodation for 5+2 guests, Panorama House is the ideal place for a family vacation or a getaway with friends. Spacious rooms, a barbecue, a modern kitchen, and a cozy living room create the perfect atmosphere for socializing and relaxation.",
+    "description2": "Enjoy the private pool, jacuzzi, and sauna, surrounded by greenery and tranquility. Spacious and bright rooms, a modern equipped kitchen, and a comfortable living room create a sense of home and coziness.\n\nWith capacity for 5+2 guests, Panorama House is ideal for a family vacation, weekend with friends, or romantic nature escape. On the outdoor terrace with barbecue, you can spend unforgettable moments watching the sunset with breathtaking views.",
     "highlights": [
-      "Air-conditioned accommodation",
+      "Air-conditioned accommodation (4*)",
       "Private pool, jacuzzi, and sauna",
       "Panoramic view of the Danube",
-      "Barbecue and outdoor terrace",
-      "Close to cultural and natural attractions of Aljmaš"
+      "BBQ and spacious covered terrace",
+      "Close to cultural and natural attractions of Aljmaš and surroundings"
     ],
     "contactCta": "Contact Information",
-    "experienceTitle": "The Experience",
-    "experienceText1": "Every stay at Panorama House is designed to be carefree. You'll be greeted by a tidy space, fresh linens, and carefully prepared details that emphasize the warmth of a home atmosphere.",
-    "experienceText2": "Our location provides quick access to the Danube, local gastronomy, and cultural landmarks of Aljmaš. Whether you're looking for an active vacation or complete peace, Panorama House offers a great balance."
+    "experienceTitle": "The Stay Experience",
+    "experienceText1": "At Panorama House, we believe true luxury lies in peace, comfort, and warm hospitality. Every corner is carefully designed so you feel relaxed and special from the first moment.",
+    "experienceText2": "Indulge in the jacuzzi or sauna, cool down in the pool, and enjoy the breathtaking Danube view. When you wish to explore the surroundings, bicycles are available for leisurely rides through nature, and nearby await the beauties of Aljmaš, local wineries, and cultural landmarks.\n\nPanorama House – where elegance meets the warmth of home and every stay becomes a memory."
   },
   "features": {
     "label": "Amenities",
@@ -52,34 +52,30 @@
     "items": {
       "pool": {
         "title": "Private Pool",
-        "description": "Enjoy a refreshing swim in the private pool overlooking the Danube."
+        "description": "Refresh and relax in the private pool with beautiful views of the Danube."
       },
       "sauna": {
         "title": "Finnish Sauna",
-        "description": "Relax in the luxurious Finnish sauna after a long day by the river."
+        "description": "Experience complete peace and relaxation in the luxurious Finnish sauna after a day spent in nature."
       },
       "view": {
         "title": "Danube View",
-        "description": "Enjoy spectacular views of the Danube from all parts of the house."
+        "description": "Enjoy spectacular panoramic views of the Danube from all parts of the house."
       },
       "grill": {
         "title": "BBQ Area",
-        "description": "Prepare meals outdoors in the well-equipped BBQ area."
-      },
-      "parking": {
-        "title": "On-site Parking",
-        "description": "Free parking for your vehicles directly on the premises."
+        "description": "Prepare delicious meals outdoors in the well-equipped and practical BBQ area."
       },
       "wifi": {
         "title": "Fast Wi-Fi",
-        "description": "Stay connected with fast and stable internet."
+        "description": "Stay connected via fast and stable internet, without interrupting your vacation."
       }
     }
   },
   "gallery": {
     "label": "Gallery",
-    "title": "Take a look inside Panorama House",
-    "subtitle": "Photos of our home, wellness area, and enchanting Danube views.",
+    "title": "Peek Inside Panorama House",
+    "subtitle": "Modern decorated home, private pool, and panoramic views inviting relaxation and moments you'll remember.",
     "images": {
       "gallery01": "View from the house to the Danube",
       "gallery02": "View of nature and surroundings",
@@ -94,17 +90,17 @@
   },
   "location": {
     "label": "Location",
-    "title": "Discover Aljmaš",
-    "description": "Aljmaš is a small settlement located on the right bank of the Danube, not far from Osijek. Known for its pristine nature, this area offers numerous opportunities for walks, cycling, and fishing. Nearby you'll find local restaurants with traditional cuisine, as well as landmarks that make every stay special.",
+    "title": "Aljmaš and Surroundings",
+    "description": "Nestled in the far east of Croatia, Aljmaš is a peaceful settlement on the right bank of the Danube, near Osijek. The surroundings captivate with untouched nature, ideal for walks, cycling, and fishing. Nearby you'll find local restaurants with traditional Slavonian cuisine, and cultural and religious landmarks that make every stay special. The municipality of Erdut, to which Aljmaš belongs, also offers wine routes, nature reserves, and a diverse range of events. Visit Aljmaš and return to the comfort of Panorama House — your home away from home.",
     "cta": "View on Map"
   },
   "contact": {
     "label": "Contact Us",
     "title": "Reservations and Information",
-    "subtitle": "Have a question or want to book a stay? Contact us via WhatsApp, phone, or contact form. We respond as soon as possible.",
-    "description": "Have a question or want to book a stay? Contact us via WhatsApp, phone, or contact form. We respond as soon as possible.",
+    "subtitle": "Want to book a stay or learn more? Contact us via WhatsApp, phone, or contact form – we look forward to your inquiry and helping you enjoy the peace, comfort, and panoramic views of Panorama House!",
+    "description": "Want to book a stay or learn more? Contact us via WhatsApp, phone, or contact form – we look forward to your inquiry and helping you enjoy the peace, comfort, and panoramic views of Panorama House!",
     "howToReach": "How to Reach Us",
-    "locationDescription": "Panorama House is located at Rudina Perinac 1, Aljmaš. Parking is available on site, and nearby you'll find walking paths along the Danube, local restaurants, and Aljmaš landmarks.",
+    "locationDescription": "Panorama House is located at Rudina Perinac 1, Aljmaš. The location is easily accessible by car, and free parking for multiple vehicles is available on-site. We look forward to your arrival and to you enjoying the peace, comfort, and beautiful views.",
     "whatsappCta": "Book via WhatsApp",
     "labels": {
       "phone": "Phone",
@@ -132,8 +128,8 @@
     "contactInfo": "Contact Information",
     "preview": {
       "label": "Reservations",
-      "title": "Ready for a vacation in Aljmaš?",
-      "description": "Contact us via WhatsApp or send an inquiry through the contact form. We respond as soon as possible.",
+      "title": "Enjoy the private pool, jacuzzi, and sauna with Danube views!",
+      "description": "Book your stay via WhatsApp or contact form and indulge in an unforgettable vacation.",
       "whatsappCta": "Contact us on WhatsApp",
       "formCta": "Contact Form"
     }

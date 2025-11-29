@@ -25,6 +25,15 @@ export const metadata: Metadata = {
   description: SITE.meta.description,
   keywords: SITE.meta.keywords,
   metadataBase: new URL(SITE.meta.url),
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/icon.png' },
+    ],
+  },
   openGraph: {
     title: SITE.meta.title,
     description: SITE.meta.description,

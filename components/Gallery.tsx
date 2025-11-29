@@ -119,9 +119,6 @@ export function Gallery() {
               className="h-auto max-h-[80vh] w-auto max-w-full rounded-3xl object-contain shadow-soft"
               priority
             />
-            <figcaption className="mt-4 text-center text-sm text-white/80">
-              {t.gallery.images[images[active].altKey]}
-            </figcaption>
             
             {/* Navigation buttons */}
             <button

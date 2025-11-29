@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Panorama House Aljmaš",
-    "tagline": "Ihr Rückzugsort in der Natur an der Donau"
+    "tagline": "Ferienhaus mit Donaublick"
   },
   "nav": {
     "home": "Startseite",
@@ -12,39 +12,39 @@
     "whatsapp": "Über WhatsApp buchen"
   },
   "hero": {
-    "label": "Landtourismus • Aljmaš",
-    "title": "Ihr Rückzugsort in der Natur an der Donau",
-    "subtitle": "Entdecken Sie Ruhe und Komfort in unserem luxuriösen Haus mit Pool, Sauna und atemberaubendem Ausblick.",
+    "label": "Ferienhaus • Aljmaš",
+    "title": "Ihr Ort der Ruhe und Erholung mit Donaublick",
+    "subtitle": "Genießen Sie den privaten Pool, den Whirlpool und die Sauna, umgeben von Ruhe und atemberaubendem Panoramablick",
     "cta": {
       "primary": "Verfügbarkeit prüfen",
       "secondary": "Jetzt buchen"
     },
     "highlights": {
-      "home": "Gemütliches Zuhause",
+      "home": "Ruhige Umgebung",
       "pool": "Privater Pool",
       "wellness": "Whirlpool & Sauna"
     }
   },
   "about": {
     "label": "Über uns",
-    "title": "Ein Zuhause zum Entspannen",
+    "title": "Ein Zuhause zum Entspannen und Genießen",
     "description": "Panorama House Aljmaš ist ein familiengeführtes Haus, das Komfort, Natur und Ruhe vereint. Auf einem Hügel über der Donau gelegen, bietet unser Zuhause einen einzigartigen Panoramablick, der den Atem raubt. Genießen Sie den privaten Pool, den Whirlpool und die Sauna und erleben Sie Landtourismus mit einem Hauch von Luxus.",
     "cta": "Mehr erfahren",
     "imageAlt": "Panorama House Aljmaš mit Panoramablick auf die Donau",
     "imageCaption": "Schlafzimmer mit Donaublick",
     "storyLabel": "Unsere Geschichte",
-    "description2": "Mit klimatisierter Unterkunft für 5+2 Gäste ist das Panorama House der ideale Ort für einen Familienurlaub oder einen Ausflug mit Freunden. Geräumige Zimmer, ein Grillplatz, eine modern ausgestattete Küche und ein gemütliches Wohnzimmer schaffen die perfekte Atmosphäre zum Beisammensein und Entspannen.",
+    "description2": "Genießen Sie den privaten Pool, den Whirlpool und die Sauna, umgeben von Grün und Stille. Geräumige und helle Zimmer, eine modern ausgestattete Küche und ein gemütliches Wohnzimmer schaffen ein Gefühl von Zuhause und Behaglichkeit.\n\nMit einer Kapazität für 5+2 Gäste ist das Panorama House ideal für einen Familienurlaub, ein Wochenende mit Freunden oder einen romantischen Ausflug in die Natur. Auf der Außenterrasse mit Grill können Sie unvergessliche Momente beim Sonnenuntergang mit atemberaubender Aussicht verbringen.",
     "highlights": [
-      "Klimatisierte Unterkunft",
+      "Klimatisierte Unterkunft (4*)",
       "Privater Pool, Whirlpool und Sauna",
       "Panoramablick auf die Donau",
-      "Grillplatz und Außenterrasse",
-      "In der Nähe von kulturellen und natürlichen Sehenswürdigkeiten in Aljmaš"
+      "Grill und geräumige überdachte Terrasse",
+      "Nähe zu kulturellen und natürlichen Sehenswürdigkeiten von Aljmaš und Umgebung"
     ],
     "contactCta": "Kontaktinformationen",
-    "experienceTitle": "Das Erlebnis",
-    "experienceText1": "Jeder Aufenthalt im Panorama House ist sorglos geplant. Sie werden von einem gepflegten Raum, frischer Bettwäsche und liebevoll vorbereiteten Details empfangen, die die Wärme eines Zuhauses unterstreichen.",
-    "experienceText2": "Unsere Lage bietet schnellen Zugang zur Donau, zur lokalen Gastronomie und zu den kulturellen Highlights von Aljmaš. Egal ob Sie einen aktiven Urlaub oder absolute Ruhe suchen – das Panorama House bietet die perfekte Balance."
+    "experienceTitle": "Das Aufenthaltserlebnis",
+    "experienceText1": "Im Panorama House glauben wir, dass wahrer Luxus in Ruhe, Komfort und herzlicher Gastfreundschaft liegt. Jede Ecke ist sorgfältig gestaltet, damit Sie sich vom ersten Moment an entspannt und besonders fühlen.",
+    "experienceText2": "Gönnen Sie sich den Whirlpool oder die Sauna, kühlen Sie sich im Pool ab und genießen Sie den atemberaubenden Donaublick. Wenn Sie die Umgebung erkunden möchten, stehen Ihnen Fahrräder für gemütliche Fahrten durch die Natur zur Verfügung, und in der Nähe erwarten Sie die Schönheiten von Aljmaš, lokale Weingüter und kulturelle Sehenswürdigkeiten.\n\nPanorama House – wo Eleganz auf die Wärme eines Zuhauses trifft und jeder Aufenthalt zu einer Erinnerung wird."
   },
   "features": {
     "label": "Ausstattung",
@@ -52,34 +52,30 @@
     "items": {
       "pool": {
         "title": "Privater Pool",
-        "description": "Genießen Sie ein erfrischendes Bad im privaten Pool mit Blick auf die Donau."
+        "description": "Erfrischen und entspannen Sie sich im privaten Pool mit herrlichem Blick auf die Donau."
       },
       "sauna": {
         "title": "Finnische Sauna",
-        "description": "Entspannen Sie nach einem langen Tag am Fluss in der luxuriösen finnischen Sauna."
+        "description": "Erleben Sie vollkommene Ruhe und Entspannung in der luxuriösen finnischen Sauna nach einem Tag in der Natur."
       },
       "view": {
         "title": "Donaublick",
-        "description": "Genießen Sie spektakuläre Blicke auf die Donau aus allen Bereichen des Hauses."
+        "description": "Genießen Sie spektakuläre Panoramablicke auf die Donau von allen Bereichen des Hauses."
       },
       "grill": {
         "title": "Grillbereich",
-        "description": "Bereiten Sie Mahlzeiten im gut ausgestatteten Grillbereich im Freien zu."
-      },
-      "parking": {
-        "title": "Parken vor Ort",
-        "description": "Kostenlose Parkplätze für Ihre Fahrzeuge direkt auf dem Grundstück."
+        "description": "Bereiten Sie köstliche Mahlzeiten im Freien im gut ausgestatteten und praktischen Grillbereich zu."
       },
       "wifi": {
         "title": "Schnelles WLAN",
-        "description": "Bleiben Sie mit schnellem und stabilem Internet verbunden."
+        "description": "Bleiben Sie über schnelles und stabiles Internet verbunden, ohne Ihren Urlaub zu unterbrechen."
       }
     }
   },
   "gallery": {
     "label": "Galerie",
     "title": "Ein Blick ins Panorama House",
-    "subtitle": "Fotos unseres Hauses, des Wellnessbereichs und der bezaubernden Donaublicke.",
+    "subtitle": "Modern eingerichtetes Haus, privater Pool und Panoramablicke, die zur Entspannung und zu Momenten einladen, die Sie in Erinnerung behalten werden.",
     "images": {
       "gallery01": "Blick vom Haus auf die Donau",
       "gallery02": "Blick auf die Natur und Umgebung",
@@ -94,17 +90,17 @@
   },
   "location": {
     "label": "Lage",
-    "title": "Entdecken Sie Aljmaš",
-    "description": "Aljmaš ist ein kleines Dorf am rechten Donauufer, unweit von Osijek. Bekannt für seine unberührte Natur, bietet die Umgebung zahlreiche Möglichkeiten zum Spazierengehen, Radfahren und Angeln. In der Nähe finden Sie lokale Restaurants mit traditioneller Küche sowie Sehenswürdigkeiten, die jeden Aufenthalt zu etwas Besonderem machen.",
+    "title": "Aljmaš und Umgebung",
+    "description": "Eingebettet im äußersten Osten Kroatiens ist Aljmaš eine ruhige Siedlung am rechten Donauufer, unweit von Osijek. Die Umgebung begeistert mit unberührter Natur, ideal zum Spazierengehen, Radfahren und Angeln. In der Nähe finden Sie lokale Restaurants mit traditioneller slawonischer Küche sowie kulturelle und sakrale Sehenswürdigkeiten, die jeden Aufenthalt zu etwas Besonderem machen. Die Gemeinde Erdut, zu der Aljmaš gehört, bietet auch Weinstraßen, Naturschutzgebiete und ein vielfältiges Veranstaltungsspektrum. Besuchen Sie Aljmaš und kehren Sie zum Komfort des Panorama House zurück – Ihrem Zuhause fern von Zuhause.",
     "cta": "Auf der Karte ansehen"
   },
   "contact": {
     "label": "Kontakt",
     "title": "Reservierungen und Informationen",
-    "subtitle": "Haben Sie Fragen oder möchten Sie einen Aufenthalt buchen? Kontaktieren Sie uns über WhatsApp, Telefon oder das Kontaktformular. Wir antworten so schnell wie möglich.",
-    "description": "Haben Sie Fragen oder möchten Sie einen Aufenthalt buchen? Kontaktieren Sie uns über WhatsApp, Telefon oder das Kontaktformular. Wir antworten so schnell wie möglich.",
+    "subtitle": "Möchten Sie einen Aufenthalt buchen oder mehr erfahren? Kontaktieren Sie uns über WhatsApp, Telefon oder Kontaktformular – wir freuen uns auf Ihre Anfrage und darauf, Ihnen zu helfen, die Ruhe, den Komfort und den Panoramablick des Panorama House zu genießen!",
+    "description": "Möchten Sie einen Aufenthalt buchen oder mehr erfahren? Kontaktieren Sie uns über WhatsApp, Telefon oder Kontaktformular – wir freuen uns auf Ihre Anfrage und darauf, Ihnen zu helfen, die Ruhe, den Komfort und den Panoramablick des Panorama House zu genießen!",
     "howToReach": "So erreichen Sie uns",
-    "locationDescription": "Das Panorama House befindet sich in der Rudina Perinac 1 in Aljmaš. Parkplätze stehen vor Ort zur Verfügung und in der Nähe finden Sie Spazierwege entlang der Donau, lokale Restaurants und Sehenswürdigkeiten von Aljmaš.",
+    "locationDescription": "Das Panorama House befindet sich in der Rudina Perinac 1 in Aljmaš. Der Standort ist bequem mit dem Auto erreichbar und kostenlose Parkplätze für mehrere Fahrzeuge stehen vor Ort zur Verfügung. Wir freuen uns auf Ihre Ankunft und darauf, dass Sie die Ruhe, den Komfort und die wunderschöne Aussicht genießen.",
     "whatsappCta": "Über WhatsApp buchen",
     "labels": {
       "phone": "Telefon",
@@ -132,8 +128,8 @@
     "contactInfo": "Kontaktinformationen",
     "preview": {
       "label": "Reservierungen",
-      "title": "Bereit für einen Urlaub in Aljmaš?",
-      "description": "Kontaktieren Sie uns über WhatsApp oder senden Sie eine Anfrage über das Kontaktformular. Wir antworten so schnell wie möglich.",
+      "title": "Genießen Sie den privaten Pool, Whirlpool und Sauna mit Donaublick!",
+      "description": "Buchen Sie Ihren Aufenthalt über WhatsApp oder das Kontaktformular und gönnen Sie sich einen unvergesslichen Urlaub.",
       "whatsappCta": "Kontakt über WhatsApp",
       "formCta": "Kontaktformular"
     }

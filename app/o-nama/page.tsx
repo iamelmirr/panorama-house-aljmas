@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import type { Metadata } from "next";
 import { SITE } from "@/lib/site.config";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import MapEmbed from "@/components/MapEmbed";
@@ -22,19 +21,19 @@ export default function AboutPage() {
             <h1 className="section-heading text-brand-charcoal text-center md:text-left">
                {t.about.title}
             </h1>
-            <p className="text-base leading-relaxed text-brand-slate">
+            <p className="text-base leading-relaxed text-brand-slate text-center md:text-left">
               {t.about.description}
             </p>
             <div className="lg:hidden">
               <Image
-                src="/images/about.jpg"
+                src="/images/gallery-08.jpg"
                 alt="Panorama House Aljmaš - naš dom"
                 width={1280}
                 height={720}
                 className="h-full w-full object-cover rounded-3xl shadow-soft"
               />
             </div>
-            <p className="text-base leading-relaxed text-brand-slate">
+            <p className="text-base leading-relaxed text-brand-slate text-center md:text-left">
               {t.about.description2}
             </p>
             <ul className="grid gap-1 text-sm text-brand-charcoal/90">
@@ -48,7 +47,7 @@ export default function AboutPage() {
                 </li>
               ))}
             </ul>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
               <WhatsAppCTA label={t.contact.whatsappCta} />
               <Link href="/kontakt" className="btn btn-ghost">
                 {t.about.contactCta}
@@ -58,7 +57,7 @@ export default function AboutPage() {
 
           <div className="relative overflow-hidden rounded-3xl shadow-soft hidden lg:block">
             <Image
-              src="/images/about.jpg"
+              src="/images/gallery-08.jpg"
               alt="Panorama House Aljmaš - naš dom"
               width={1280}
               height={720}
@@ -71,13 +70,13 @@ export default function AboutPage() {
       <section className="py-8 md:py-12 bg-brand-sand/70">
         <div className="container-grid grid gap-8 lg:grid-cols-2 lg:items-center">
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold text-brand-charcoal">
+            <h2 className="text-3xl font-semibold text-brand-charcoal text-center md:text-left">
               {t.about.experienceTitle}
             </h2>
-            <p className="text-base text-brand-slate">
+            <p className="text-base text-brand-slate text-center md:text-left">
               {t.about.experienceText1}
             </p>
-            <p className="text-base text-brand-slate">
+            <p className="text-base text-brand-slate text-center md:text-left">
               {t.about.experienceText2}
             </p>
           </div>
