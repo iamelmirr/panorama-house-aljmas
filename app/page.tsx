@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import LocalHostBadge from "@/components/LocalHostBadge";
 import AboutPreview from "@/components/AboutPreview";
 import Features from "@/components/Features";
 import Gallery from "@/components/Gallery";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <LocalHostBadge />
       <AboutPreview />
       <Features />
       <Gallery />

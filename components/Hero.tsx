@@ -27,20 +27,14 @@ export function Hero() {
         </div>
         <div className="space-y-6">
           <div className="space-y-4">
-            <h1 className="text-4xl font-semibold leading-tight !text-white drop-shadow-2xl md:text-5xl lg:text-6xl [text-shadow:_0_4px_12px_rgb(0_0_0_/_60%)]">
+            <h1 className="text-3xl font-semibold leading-tight !text-white drop-shadow-2xl md:text-4xl lg:text-5xl [text-shadow:_0_4px_12px_rgb(0_0_0_/_60%)]">
               {t.site.name}
             </h1>
-            <div className="flex justify-center">
-              <Image
-                src="/local host logo.png"
-                alt="Local Host badge"
-                width={120}
-                height={120}
-                className="drop-shadow-lg"
-              />
-            </div>
+            <p className="text-lg text-white/80 drop-shadow-md md:text-xl">
+              {t.hero.title}
+            </p>
           </div>
-          <p className="mx-auto max-w-2xl text-lg text-white/85 drop-shadow-lg">
+          <p className="mx-auto max-w-xl text-base leading-relaxed text-white/80 drop-shadow-md md:text-lg">
             {t.hero.subtitle}
           </p>
         </div>
