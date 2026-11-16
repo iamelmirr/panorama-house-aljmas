@@ -1,14 +1,14 @@
 {
   "redirects": [
     {
-      "source": "/((?!u-izradi\\.html|logo\\.png|images/hero\\.jpg|favicon\\.ico).*)",
-      "destination": "/u-izradi.html",
+      "source": "/((?!u-izradi$|logo\\.png|images/hero\\.jpg|favicon\\.ico).*)",
+      "destination": "/u-izradi",
       "permanent": false
     }
   ],
   "headers": [
     {
-      "source": "/u-izradi.html",
+      "source": "/u-izradi",
       "headers": [{ "key": "Cache-Control", "value": "no-store" }]
     }
   ]
