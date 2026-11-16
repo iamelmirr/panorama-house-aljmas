@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Panorama House Aljmaš – stranica u izradi</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root { --gold: #d1a760; --charcoal: #0f172a; --sand: #f5f1e8; }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #fff;
+      background: var(--charcoal) url("/images/hero.jpg") center / cover no-repeat;
+      -webkit-font-smoothing: antialiased;
+    }
+    .veil {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 20px;
+      background: linear-gradient(180deg, rgba(15, 23, 42, .55), rgba(15, 23, 42, .82));
+    }
+    main { width: 100%; max-width: 560px; text-align: center; }
+    .logo { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); background: #fff; }
+    .name { margin-top: 20px; font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
+    h1 { margin-top: 12px; font-family: "Manrope", "Inter", system-ui, sans-serif; font-size: clamp(30px, 7vw, 44px); line-height: 1.15; font-weight: 700; }
+    p.lead { margin-top: 16px; font-size: 17px; line-height: 1.6; color: rgba(255, 255, 255, .86); }
+    .contact { margin-top: 32px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .contact a {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--charcoal);
+      background: var(--gold);
+    }
+    .contact a.ghost { color: #fff; background: transparent; border: 1px solid rgba(209, 167, 96, .8); }
+    .contact a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .address { margin-top: 28px; font-size: 14px; color: rgba(255, 255, 255, .7); }
+  </style>
+</head>
+<body>
+  <div class="veil">
+    <main>
+      <img class="logo" src="/logo.png" alt="Panorama House Aljmaš" width="96" height="96">
+      <div class="name">Panorama House Aljmaš</div>
+      <h1>Stranica je u izradi</h1>
+      <p class="lead">Uskoro se vraćamo s osvježenim sadržajem. Za upite i rezervacije slobodno nas kontaktirajte.</p>
+      <div class="contact">
+        <a href="tel:+385992119225">+385 99 211 9225</a>
+        <a href="https://wa.me/385992119225">WhatsApp</a>
+        <a class="ghost" href="mailto:panoramahousealjmas@gmail.com">panoramahousealjmas@gmail.com</a>
+      </div>
+      <p class="address">Rudina Perinac 1, Aljmaš, Hrvatska</p>
+    </main>
+  </div>
+</body>
+</html>
